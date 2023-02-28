@@ -938,7 +938,6 @@ if __name__ == '__main__':
     )
 
     dispatcher.add_handler(conv_handler)
-    dispatcher.add_error_handler(error)
     dispatcher.add_handler(CommandHandler("start", start))
 
     updater.start_polling()
