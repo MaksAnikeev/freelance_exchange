@@ -826,7 +826,7 @@ if __name__ == '__main__':
     env = environs.Env()
     env.read_env()
 
-    telegram_bot_token = env.str("TG_BOT_TOKEN")
+    telegram_bot_token = env.str("CLIENT_ID")
 
     updater = Updater(telegram_bot_token, use_context=True)
     dispatcher = updater.dispatcher
